@@ -24,7 +24,7 @@
     <div class="carousel-inner" role="listbox">
 
      <div class="item active">
-     <center><img src="Imagenes/vista.jpg" style="width: 932px; height: 407px" /><br />
+     <center><img src="Imagenes/ImagenesPrincipales/iniciocar.png" style="width: 932px; height: 407px" /><br />
          <br />
          </center>
      <div class="carousel-caption" style="left: 15%; right: 15%; bottom: 20px">
@@ -32,34 +32,34 @@
      </div>
 
     <div class="item">
-   <center> <img src="Imagenes/inicio.jpg" width="932" height="407" /></center>
+   <center> <img src="Imagenes/ImagenesPrincipales/iniciocar.png" width="932" height="407" /></center>
     <div class="carousel-caption">
     </div>
     </div>
     
       <div class="item">
-       <center> <img src="Imagenes/inicio1.jpg" width="932" height="407" /></center>
+       <center> <img src="Imagenes/ImagenesPrincipales/iniciocar2.png" width="932" height="407" /></center>
         <div class="carousel-caption">
          
         </div>
       </div>
 
       <div class="item">
-       <center> <img src="Imagenes/inicio2.jpg"  width="932" height="407" /></center>
+       <center> <img src="Imagenes/ImagenesPrincipales/iniciocar2.png"  width="932" height="407" /></center>
         <div class="carousel-caption">
           
         </div>
       </div>
 
       <div class="item">
-        <center><img src="Imagenes/inicio3.jpg"   width="932" height="407" /></center>
+        <center><img src="Imagenes/ImagenesPrincipales/inicio3.jpg"   width="932" height="407" /></center>
         <div class="carousel-caption">
         
         </div>
       </div>
 
       <div class="item">
-        <center><img src="Imagenes/inicio4.jpg"  width="932" height="407" /></center>
+        <center><img src="Imagenes/ImagenesPrincipales/inicio4.jpg"  width="932" height="407" /></center>
         <div class="carousel-caption">
          
         </div>
@@ -78,22 +78,29 @@
     </a>
   </div>
 </div>
-        
+    <span style="font-size: xx-large;">      
             
-    <div class="jumbotron"> 
-    <h1> <span style="font-size: xx-large;">Misión:</span> </h1>
-    <p class="lead"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: medium;">Proveer un servicio integral de hotelería de calidad, calidez a todos nuestros huéspedes y clientes haciendo de la excelencia nuestra carta de presentación.</span></span></p>
+    <div style="text-align: center; color: #FFFFFF;" > 
+
+    <h1 style="width: 1002px; height: 47px"> <span style="font-size: xx-large;">Misión:</span> </h1>
+    <p class="lead" style="width: 998px"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: medium;">Proveer un servicio integral </span></span></p>
+        <p class="lead"><span style="font-family: arial, helvetica, sans-serif; font-size: medium">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <h1 style="width: 995px"> <span style="font-size: xx-large;">Visión:</span> </h1>
+    <p class="lead"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: medium;">Proveer un servicio integral </span></span></p>
+        <p> &nbsp;</p>
+        <h3 style="color: #FFFFFF; text-align: center;">SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
     </div>
-    <div class="jumbotron">
-    <h2>Visión:</h2>
-    <p class="lead"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: medium;">
-    Representar la hospitalidad del Hotel Atacames 2, preservando y promoviendo nuestros valores culturales, sociales y ambientales y creando experiencias únicas que motiven a nuestros huéspedes a volver.</span></span></p>
-    </div>
-    <center><p><a href="Reserva.aspx" class="btn btn-primary btn-lg">Reserve Ahora &raquo;</a></p></center>
-        <div class="col-md-4">
-            <p>
-                &nbsp;</p>
+    
+    
+<div class="custom" style="width: 650px; height: 219px">
+	
+<div class="social_ball">
+  <div class="bola_social">
+    <div class="bola_blanca" style="width: 597px; vertical-align: bottom; position: relative; text-align: center; left: 303px; top: 3px;"><a href="https://www.facebook.com/BookFast-118047832187198/" target="_blank"><img src="/Imagenes/ImagenesPrincipales/face.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: xx-large;"><a href="https://twitter.com/PapeleriaDilipa" target="_blank"><img src="/Imagenes/ImagenesPrincipales/twiter.png" alt="" style="margin-top: 0px"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+  </div>
+</div></div>
         </div>
   
-
-</asp:Content>
+    </div>
+<h3 style="color: #FFFFFF; text-align: center;">Contactos: </h3>
+    </span></asp:Content>

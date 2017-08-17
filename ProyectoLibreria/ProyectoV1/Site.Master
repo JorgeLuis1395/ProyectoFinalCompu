@@ -7,17 +7,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Hotel Atacames 2</title>
+    <title><%: Page.Title %> -  Book Fast</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
+    <link href="~/Imagenes/ImagenesPrincipales/iconbf2.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-    <form runat="server" ImageUrl="~/Imagenes/Logopaper.jpg" style="background-position: center; background-image: url('/Imagenes/center.jpg'); background-attachment: fixed; background-repeat: repeat;">
+    <form runat="server" ImageUrl="~/Imagenes/ImagenesPrincipales/Logopaper.jpg" style="background-position: center; background-image: url('/Imagenes/ImagenesPrincipales/center.jpg'); background-attachment: fixed; background-repeat: repeat;">
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -44,44 +44,31 @@
             </Scripts>
         </asp:ScriptManager>
                      
-                    <asp:Image ID="Image1" runat="server" Height="49px" ImageUrl="~/Imagenes/logo2.png" Width="99px" />
+                    <asp:Image ID="Image1" runat="server" Height="49px" ImageUrl="~/Imagenes/ImagenesPrincipales/logo2.png" Width="99px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></div>
-                <div class="navbar-collapse collapse" ImageUrl="~/Imagenes/Logopaper.jpg" >
+                <div class="navbar-collapse collapse" ImageUrl="~/Imagenes/ImagenesPrincipales/Logopaper.jpg" >
                     <ul class="nav navbar-nav">
                         <p></p><p></p><p></p>
                         <li><a runat="server" href="~/Inicio.aspx">Inicio</a></li>
                           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ">Catalogo de Productos </a>
                 <ul class="dropdown-menu">
-                    <li><a href="#href="~/Servicio.aspx">
-                        <a runat="server" href="~/Informatica.aspx">Informatica</a></li>
-                    <li><a runat="server"  href="~/ReservaDatos.aspx">Ofimatica</a></li>
-                    <li><a href="#">
-                        <img src="img/logochico.png" style="margin-top: -15px;">Visuales</a></li>
-                    <li><a href="#">
-                        <img src="img/logochico.png" style="margin-top: -15px;">Archivo</a></li>
-                    <li><a href="#">
-                        <img src="img/logochico.png" style="margin-top: -15px;">Complementos</a></li>
-                    <li><a href="#">
-                        <img src="img/logochico.png" style="margin-top: -15px;">Escritura</a></li>
-                    <li><a href="#">
-                        <img src="img/logochico.png" style="margin-top: -15px;">Manipulados</a></li>
-                    <li><a href="#">
-                        <img src="img/logochico.png" style="margin-top: -15px;">Moviliario</a></li>
+                    <li><a runat="server" href="~/Oficina.aspx">Oficina</a></li>
+                    <li><a runat="server" href="~/Informatica.aspx">Tecnologia</a></li>
+                    <li><a runat="server" href="~/UtilesEscolares.aspx">Utiles Escolares</a></li>
                 </ul>
             </li>
-                        <li><a runat="server" href="~/Servicios.aspx">Papeleria</a></li>
+                        <li><a runat="server" href="~/Servicios.aspx">Papelerias</a></li>
                      </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                                <p></p><p></p><p></p>
-                                <li><a runat="server" href="~/ReservaDatos.aspx">Registrarse</a></li>
-                               <ul class="dropdown-menu">
-                                <li><a href="#href="~/Servicio.aspx">
-                                    <a runat="server" href="~/Informatica.aspx">Papeleria</a></li>
-                                <li><a href="#">Clientes</a></li>
+                               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ">Registro </a>
+                                <ul class="dropdown-menu">
+                                    <li><a runat="server" href="~/Informatica.aspx">Clientes</a></li>
+                                    <li><a runat="server" href="~/ReservaDatos.aspx">Papeleria</a></li>
                                </ul>
-                                <li><a runat="server" href="">Iniciar sesión</a></li>
+                            </li>
+                             <li><a runat="server" href="PapeleriaInicio.aspx">Iniciar sesión</a></li>
                             </ul>
                         </AnonymousTemplate>
                      </asp:LoginView>

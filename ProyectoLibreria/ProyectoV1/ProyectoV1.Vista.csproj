@@ -202,24 +202,59 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminConsultas.aspx" />
-    <Content Include="Administrador.aspx" />
-    <Content Include="Contactanos.aspx" />
-    <Content Include="Imagenes\oficina.png" />
-    <Content Include="Imagenes\Tecnologia.png" />
-    <Content Include="Imagenes\iniciocar2.png" />
-    <Content Include="Imagenes\iniciocar.png" />
-    <Content Include="Imagenes\twiter.png" />
-    <Content Include="Imagenes\logo2.png" />
-    <Content Include="Imagenes\center.jpg" />
-    <Content Include="Imagenes\face.png" />
-    <Content Include="Imagenes\Logopaper.jpg" />
+    <Content Include="Imagenes\Bienvenidos.jpeg" />
+    <Content Include="Imagenes\ImagenesPrincipales\bookface.ico" />
+    <Content Include="Imagenes\ImagenesPrincipales\iconbf2.ico" />
+    <Content Include="Imagenes\oficina\oficina1.jpg" />
+    <Content Include="Imagenes\oficina\oficina10.jpg" />
+    <Content Include="Imagenes\oficina\oficina11.jpg" />
+    <Content Include="Imagenes\oficina\oficina12.jpg" />
+    <Content Include="Imagenes\oficina\oficina13.jpg" />
+    <Content Include="Imagenes\oficina\oficina14.jpg" />
+    <Content Include="Imagenes\oficina\oficina2.jpg" />
+    <Content Include="Imagenes\oficina\oficina20.jpg" />
+    <Content Include="Imagenes\oficina\oficina21.jpg" />
+    <Content Include="Imagenes\oficina\oficina22.png" />
+    <Content Include="Imagenes\oficina\oficina23.jpg" />
+    <Content Include="Imagenes\oficina\oficina24.jpg" />
+    <Content Include="Imagenes\oficina\oficina25.jpg" />
+    <Content Include="Imagenes\oficina\oficina26.jpg" />
+    <Content Include="Imagenes\oficina\oficina27.jpg" />
+    <Content Include="Imagenes\oficina\oficina28.jpg" />
+    <Content Include="Imagenes\oficina\oficina29.jpg" />
+    <Content Include="Imagenes\oficina\oficina3.jpg" />
+    <Content Include="Imagenes\oficina\oficina30.jpg" />
+    <Content Include="Imagenes\oficina\oficina31.jpg" />
+    <Content Include="Imagenes\oficina\oficina32.jpg" />
+    <Content Include="Imagenes\oficina\oficina33.png" />
+    <Content Include="Imagenes\oficina\oficina34.png" />
+    <Content Include="Imagenes\oficina\oficina35.jpg" />
+    <Content Include="Imagenes\oficina\oficina4.jpg" />
+    <Content Include="Imagenes\oficina\oficina5.jpg" />
+    <Content Include="Imagenes\oficina\oficina6.jpg" />
+    <Content Include="Imagenes\oficina\oficina7.jpg" />
+    <Content Include="Imagenes\oficina\oficina8.jpg" />
+    <Content Include="Imagenes\oficina\oficina9.png" />
+    <Content Include="Imagenes\utiles\utiles.png" />
+    <Content Include="Imagenes\oficina\oficina.png" />
+    <Content Include="Imagenes\tecnologia\Tecnologia.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\iniciocar2.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\iniciocar.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\twiter.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\logo2.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\center.jpg" />
+    <Content Include="Imagenes\ImagenesPrincipales\face.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\Logopaper.jpg" />
     <Content Include="Imagenes\482335677.jpg" />
     <Content Include="Imagenes\gestionar-recursos-humanos-adaptandose-al-cambio-1.jpg" />
     <Content Include="Imagenes\inicio.jpg" />
     <Content Include="Imagenes\MantenimientoServidor.jpg" />
+    <Content Include="IngresoProductos.aspx" />
+    <Content Include="PapeleriaInicio.aspx" />
+    <Content Include="UtilesEscolares.aspx" />
+    <Content Include="Oficina.aspx" />
     <Content Include="Informatica.aspx" />
     <Content Include="PagoTarjeta.aspx" />
-    <Content Include="Promociones.aspx" />
     <Content Include="fonts\Account\AddPhoneNumber.aspx" />
     <Content Include="fonts\Account\Confirm.aspx" />
     <Content Include="fonts\Account\Forgot.aspx" />
@@ -235,7 +270,6 @@
     <Content Include="fonts\Account\ResetPasswordConfirmation.aspx" />
     <Content Include="fonts\Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="fonts\Account\VerifyPhoneNumber.aspx" />
-    <Content Include="RegistroPapeleria.aspx" />
     <Content Include="Reserva.aspx" />
     <Content Include="ReservaDatos.aspx" />
     <Content Include="Servicios.aspx" />
@@ -250,14 +284,15 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Tecnologia.aspx" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="Papeleria.Master" />
+    <None Include="Properties\PublishProfiles\BookFast - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ProyectoV1Vista20170816095640 - Web Deploy.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Imagenes\promotion-flag.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -288,7 +323,6 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Inicio.aspx" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -312,22 +346,43 @@
     <Compile Include="AdminConsultas.aspx.designer.cs">
       <DependentUpon>AdminConsultas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administrador.aspx.cs">
-      <DependentUpon>Administrador.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administrador.aspx.designer.cs">
-      <DependentUpon>Administrador.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Conexion.cs" />
-    <Compile Include="Contactanos.aspx.cs">
-      <DependentUpon>Contactanos.aspx</DependentUpon>
+    <Compile Include="GenerarCodigos.cs" />
+    <Compile Include="IngresoProductos.aspx.cs">
+      <DependentUpon>IngresoProductos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contactanos.aspx.designer.cs">
-      <DependentUpon>Contactanos.aspx</DependentUpon>
+    <Compile Include="IngresoProductos.aspx.designer.cs">
+      <DependentUpon>IngresoProductos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GenerarCodigos.cs" />
+    <Compile Include="Papeleria.Master.cs">
+      <DependentUpon>Papeleria.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Papeleria.Master.designer.cs">
+      <DependentUpon>Papeleria.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PapeleriaInicio.aspx.cs">
+      <DependentUpon>PapeleriaInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PapeleriaInicio.aspx.designer.cs">
+      <DependentUpon>PapeleriaInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilesEscolares.aspx.cs">
+      <DependentUpon>UtilesEscolares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UtilesEscolares.aspx.designer.cs">
+      <DependentUpon>UtilesEscolares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Oficina.aspx.cs">
+      <DependentUpon>Oficina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Oficina.aspx.designer.cs">
+      <DependentUpon>Oficina.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Informatica.aspx.cs">
       <DependentUpon>Informatica.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -453,24 +508,10 @@
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Promociones.aspx.cs">
-      <DependentUpon>Promociones.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Promociones.aspx.designer.cs">
-      <DependentUpon>Promociones.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="RegistroPapeleria.aspx.cs">
-      <DependentUpon>RegistroPapeleria.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RegistroPapeleria.aspx.designer.cs">
-      <DependentUpon>RegistroPapeleria.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Reserva.aspx.cs">
       <DependentUpon>Reserva.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -512,13 +553,6 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
-    <Compile Include="Tecnologia.aspx.cs">
-      <DependentUpon>Tecnologia.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Tecnologia.aspx.designer.cs">
-      <DependentUpon>Tecnologia.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Validaciones.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -537,7 +571,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

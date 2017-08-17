@@ -24,7 +24,7 @@
     <div class="carousel-inner" role="listbox">
 
      <div class="item active">
-     <center><img src="Imagenes/iniciocar.png" style="width: 932px; height: 407px" /><br />
+     <center><img src="Imagenes/ImagenesPrincipales/iniciocar.png" style="width: 932px; height: 407px" /><br />
          <br />
          </center>
      <div class="carousel-caption" style="left: 15%; right: 15%; bottom: 20px">
@@ -32,34 +32,34 @@
      </div>
 
     <div class="item">
-   <center> <img src="Imagenes/iniciocar.png" width="932" height="407" /></center>
+   <center> <img src="Imagenes/ImagenesPrincipales/iniciocar.png" width="932" height="407" /></center>
     <div class="carousel-caption">
     </div>
     </div>
     
       <div class="item">
-       <center> <img src="Imagenes/iniciocar2.png" width="932" height="407" /></center>
+       <center> <img src="Imagenes/ImagenesPrincipales/iniciocar2.png" width="932" height="407" /></center>
         <div class="carousel-caption">
          
         </div>
       </div>
 
       <div class="item">
-       <center> <img src="Imagenes/iniciocar2.png"  width="932" height="407" /></center>
+       <center> <img src="Imagenes/ImagenesPrincipales/iniciocar2.png"  width="932" height="407" /></center>
         <div class="carousel-caption">
           
         </div>
       </div>
 
       <div class="item">
-        <center><img src="Imagenes/inicio3.jpg"   width="932" height="407" /></center>
+        <center><img src="Imagenes/ImagenesPrincipales/inicio3.jpg"   width="932" height="407" /></center>
         <div class="carousel-caption">
         
         </div>
       </div>
 
       <div class="item">
-        <center><img src="Imagenes/inicio4.jpg"  width="932" height="407" /></center>
+        <center><img src="Imagenes/ImagenesPrincipales/inicio4.jpg"  width="932" height="407" /></center>
         <div class="carousel-caption">
          
         </div>
@@ -96,7 +96,7 @@
 	
 <div class="social_ball">
   <div class="bola_social">
-    <div class="bola_blanca" style="width: 597px; vertical-align: bottom; position: relative; text-align: center; left: 303px; top: 3px;"><a href="https://www.facebook.com/dilipaecuador" target="_blank"><img src="/Imagenes/face.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: xx-large;"><a href="https://twitter.com/PapeleriaDilipa" target="_blank"><img src="/Imagenes/twiter.png" alt="" style="margin-top: 0px"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+    <div class="bola_blanca" style="width: 597px; vertical-align: bottom; position: relative; text-align: center; left: 303px; top: 3px;"><a href="https://www.facebook.com/BookFast-118047832187198/" target="_blank"><img src="/Imagenes/ImagenesPrincipales/face.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: xx-large;"><a href="https://twitter.com/PapeleriaDilipa" target="_blank"><img src="/Imagenes/ImagenesPrincipales/twiter.png" alt="" style="margin-top: 0px"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
   </div>
 </div></div>
         </div>

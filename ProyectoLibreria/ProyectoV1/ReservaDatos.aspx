@@ -92,6 +92,6 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="ButtonLimpiar" runat="server" BackColor="#441D16" Font-Size="Large" Text="Limpiar" BorderColor="#F0D190" class="btn btn-primary btn-lg" OnClick="Button2_Click" />
      <p> 
-       
+       <div class="g-recaptcha" data-sitekey="6LfxIC0UAAAAAMbgPWrC5ZlDEQwnx_vA5K2knZn8"></div>
 &nbsp;&nbsp;</h16>
      </asp:Content>

@@ -37,7 +37,7 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoV1.Properties.Settings.Software2 %>" InsertCommand="insert into Cliente values [NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [CORREO_ELECTRONICO]" SelectCommand="SELECT [IDENTIFICACION_CLIENTE], [NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [CORREO_ELECTRONICO] FROM [CLIENTE]  " UpdateCommand="UPDATE Cliente SET [NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [CORREO_ELECTRONICO] where [IDENTIFICACION_CLIENTE] = @IDENTIFICACION_CLIENTE">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:software2ConnectionString %>" InsertCommand="insert into Cliente values [NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [CORREO_ELECTRONICO]" SelectCommand="SELECT [IDENTIFICACION_CLIENTE], [NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [CORREO_ELECTRONICO] FROM [CLIENTE]  " UpdateCommand="UPDATE Cliente SET [NOMBRE], [APELLIDO], [DIRECCION], [TELEFONO], [CORREO_ELECTRONICO] where [IDENTIFICACION_CLIENTE] = @IDENTIFICACION_CLIENTE" OnSelecting="SqlDataSource1_Selecting">
             <UpdateParameters>
                 <asp:Parameter Name="IDENTIFICACION_CLIENTE" />
             </UpdateParameters>
@@ -64,7 +64,7 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoV1.Properties.Settings.Software2 %>" SelectCommand="SELECT [ID_TIPO_HABITACION], [NUMERO_HABITACION_PISO], [PISO], [ESTADO] FROM [HABITACION]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:software2ConnectionString %>" SelectCommand="SELECT [ID_TIPO_HABITACION], [NUMERO_HABITACION_PISO], [PISO], [ESTADO] FROM [HABITACION]" OnSelecting="SqlDataSource2_Selecting"></asp:SqlDataSource>
         <br />
         <asp:Label ID="Label3" runat="server" Font-Size="Medium" Text="Habitaciónes Reservadas"></asp:Label>
         <br />
@@ -77,14 +77,6 @@
                 <asp:BoundField DataField="NUMERO_HABITACION_PISO" HeaderText="NUMERO_HABITACION_PISO" SortExpression="NUMERO_HABITACION_PISO" />
                 <asp:BoundField DataField="DESCRIPCION_TIPO_HABITACION" HeaderText="DESCRIPCION_TIPO_HABITACION" SortExpression="DESCRIPCION_TIPO_HABITACION" />
                 <asp:BoundField DataField="PRECIO_TIPO_HABITACION" HeaderText="PRECIO_TIPO_HABITACION" SortExpression="PRECIO_TIPO_HABITACION" />
-                <asp:BoundField DataField="DETALLE1" HeaderText="DETALLE1" SortExpression="DETALLE1" />
-                <asp:BoundField DataField="DETALLE2" HeaderText="DETALLE2" SortExpression="DETALLE2" />
-                <asp:BoundField DataField="DETALLE3" HeaderText="DETALLE3" SortExpression="DETALLE3" />
-                <asp:BoundField DataField="DETALLE4" HeaderText="DETALLE4" SortExpression="DETALLE4" />
-                <asp:BoundField DataField="DETALLE5" HeaderText="DETALLE5" SortExpression="DETALLE5" />
-                <asp:BoundField DataField="DETALLE6" HeaderText="DETALLE6" SortExpression="DETALLE6" />
-                <asp:BoundField DataField="DETALLE7" HeaderText="DETALLE7" SortExpression="DETALLE7" />
-                <asp:BoundField DataField="DETALLE8" HeaderText="DETALLE8" SortExpression="DETALLE8" />
             </Columns>
             <FooterStyle BackColor="White" ForeColor="#000066" />
             <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
@@ -96,7 +88,11 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoV1.Properties.Settings.Software2 %>" SelectCommand="SELECT HABITACION.PISO, HABITACION.NUMERO_HABITACION_PISO, TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION, TIPO_HABITACION.PRECIO_TIPO_HABITACION, TIPO_HABITACION.IMAGEN_HABITACION, TIPO_HABITACION.DETALLE1, TIPO_HABITACION.DETALLE2, TIPO_HABITACION.DETALLE3, TIPO_HABITACION.DETALLE4, TIPO_HABITACION.DETALLE5, TIPO_HABITACION.DETALLE6, TIPO_HABITACION.DETALLE7, TIPO_HABITACION.DETALLE8, TIPO_HABITACION.IMAGEN_HABITACION AS Expr1 FROM HABITACION INNER JOIN TIPO_HABITACION ON HABITACION.ID_TIPO_HABITACION = TIPO_HABITACION.ID_TIPO_HABITACION CROSS JOIN RESERVA_HABITACION WHERE (HABITACION.ESTADO = 1)"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:software2ConnectionString %>" SelectCommand="SELECT HABITACION.PISO, HABITACION.NUMERO_HABITACION_PISO, TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION, TIPO_HABITACION.PRECIO_TIPO_HABITACION  FROM HABITACION INNER JOIN TIPO_HABITACION ON HABITACION.ID_TIPO_HABITACION = TIPO_HABITACION.ID_TIPO_HABITACION  WHERE (TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION = @DESCRIPCION_TIPO_HABITACION) AND (HABITACION.ESTADO = 1) ">
+            <SelectParameters>
+                <asp:Parameter Name="DESCRIPCION_TIPO_HABITACION" />
+            </SelectParameters>
+        </asp:SqlDataSource>
         <br />
     </div>
     <p>

@@ -312,34 +312,6 @@
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="PISO" HeaderText="PISO" SortExpression="PISO" />
-                <asp:BoundField DataField="NUMERO_HABITACION_PISO" HeaderText="NUMERO HABITACION" SortExpression="NUMERO_HABITACION_PISO" />
-                <asp:BoundField DataField="DESCRIPCION_TIPO_HABITACION" HeaderText="TIPO HABITACION" SortExpression="DESCRIPCION_TIPO_HABITACION" />
-                <asp:BoundField DataField="PRECIO_TIPO_HABITACION" HeaderText="PRECIO HABITACION" SortExpression="PRECIO_TIPO_HABITACION" />
-            </Columns>
-            <EditRowStyle BackColor="#2461BF" />
-            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-            <RowStyle BackColor="#EFF3FB" />
-            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-            <SortedAscendingCellStyle BackColor="#F5F7FB" />
-            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-            <SortedDescendingCellStyle BackColor="#E9EBEF" />
-            <SortedDescendingHeaderStyle BackColor="#4870BE" />
-        </asp:GridView>
-        <ajaxToolkit:AnimationExtender ID="GridView2_AnimationExtender" runat="server" BehaviorID="GridView2_AnimationExtender" TargetControlID="GridView2">
-        </ajaxToolkit:AnimationExtender>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoV1.Properties.Settings.Software2 %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT HABITACION.PISO, HABITACION.NUMERO_HABITACION_PISO, TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION, TIPO_HABITACION.PRECIO_TIPO_HABITACION  FROM HABITACION INNER JOIN TIPO_HABITACION ON HABITACION.ID_TIPO_HABITACION = TIPO_HABITACION.ID_TIPO_HABITACION  WHERE (TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION = @DESCRIPCION_TIPO_HABITACION) AND (HABITACION.ESTADO = 0) ">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="DropDownList1" Name="DESCRIPCION_TIPO_HABITACION" PropertyName="SelectedValue" />
-            </SelectParameters>
-        </asp:SqlDataSource>
-        <br />
-        <asp:GridView ID="GridView3" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource2" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView3_SelectedIndexChanged">
-            <AlternatingRowStyle BackColor="White" />
-            <Columns>
-                <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="PISO" HeaderText="PISO" SortExpression="PISO" />
                 <asp:BoundField DataField="NUMERO_HABITACION_PISO" HeaderText="NUMERO_HABITACION_PISO" SortExpression="NUMERO_HABITACION_PISO" />
                 <asp:BoundField DataField="DESCRIPCION_TIPO_HABITACION" HeaderText="DESCRIPCION_TIPO_HABITACION" SortExpression="DESCRIPCION_TIPO_HABITACION" />
                 <asp:BoundField DataField="PRECIO_TIPO_HABITACION" HeaderText="PRECIO_TIPO_HABITACION" SortExpression="PRECIO_TIPO_HABITACION" />
@@ -355,39 +327,15 @@
             <SortedDescendingCellStyle BackColor="#E9EBEF" />
             <SortedDescendingHeaderStyle BackColor="#4870BE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoV1.Properties.Settings.Software2 %>" SelectCommand="SELECT HABITACION.PISO, HABITACION.NUMERO_HABITACION_PISO, TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION, TIPO_HABITACION.PRECIO_TIPO_HABITACION, TIPO_HABITACION.IMAGEN_HABITACION, TIPO_HABITACION.DETALLE1, TIPO_HABITACION.DETALLE2, TIPO_HABITACION.DETALLE3, TIPO_HABITACION.DETALLE4, TIPO_HABITACION.DETALLE5, TIPO_HABITACION.DETALLE6, TIPO_HABITACION.DETALLE7, TIPO_HABITACION.DETALLE8, TIPO_HABITACION.IMAGEN_HABITACION AS Expr1 FROM HABITACION INNER JOIN TIPO_HABITACION ON HABITACION.ID_TIPO_HABITACION = TIPO_HABITACION.ID_TIPO_HABITACION CROSS JOIN RESERVA_HABITACION WHERE (TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION = @DESCRIPCION_TIPO_HABITACION) AND (HABITACION.ESTADO = 0) AND (HABITACION.PISO = @PISO)">
+        <ajaxToolkit:AnimationExtender ID="GridView2_AnimationExtender" runat="server" BehaviorID="GridView2_AnimationExtender" TargetControlID="GridView2">
+        </ajaxToolkit:AnimationExtender>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:software2ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT HABITACION.PISO, HABITACION.NUMERO_HABITACION_PISO, TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION, TIPO_HABITACION.PRECIO_TIPO_HABITACION  FROM HABITACION INNER JOIN TIPO_HABITACION ON HABITACION.ID_TIPO_HABITACION = TIPO_HABITACION.ID_TIPO_HABITACION  WHERE (TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION = @DESCRIPCION_TIPO_HABITACION) AND (HABITACION.ESTADO = 0) ">
             <SelectParameters>
-                <asp:ControlParameter ControlID="DropDownList4" Name="DESCRIPCION_TIPO_HABITACION" PropertyName="SelectedValue" />
-                <asp:ControlParameter ControlID="DropDownList3" Name="PISO" PropertyName="SelectedValue" />
+                <asp:ControlParameter ControlID="DropDownList1" Name="DESCRIPCION_TIPO_HABITACION" PropertyName="SelectedValue" />
             </SelectParameters>
         </asp:SqlDataSource>
         <br />
-        <asp:GridView ID="GridView4" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource3" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView4_SelectedIndexChanged">
-            <AlternatingRowStyle BackColor="White" />
-            <Columns>
-                <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="PISO" HeaderText="PISO" SortExpression="PISO" />
-                <asp:BoundField DataField="NUMERO_HABITACION_PISO" HeaderText="NUMERO HABITACION" SortExpression="NUMERO_HABITACION_PISO" />
-                <asp:BoundField DataField="DESCRIPCION_TIPO_HABITACION" HeaderText="TIPO HABITACION" SortExpression="DESCRIPCION_TIPO_HABITACION" />
-                <asp:BoundField DataField="PRECIO_TIPO_HABITACION" HeaderText="PRECIO HABITACION" SortExpression="PRECIO_TIPO_HABITACION" />
-            </Columns>
-            <EditRowStyle BackColor="#2461BF" />
-            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
-            <RowStyle BackColor="#EFF3FB" />
-            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
-            <SortedAscendingCellStyle BackColor="#F5F7FB" />
-            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
-            <SortedDescendingCellStyle BackColor="#E9EBEF" />
-            <SortedDescendingHeaderStyle BackColor="#4870BE" />
-        </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoV1.Properties.Settings.Software2 %>" SelectCommand="SELECT HABITACION.PISO, HABITACION.NUMERO_HABITACION_PISO, TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION, TIPO_HABITACION.PRECIO_TIPO_HABITACION, TIPO_HABITACION.IMAGEN_HABITACION, TIPO_HABITACION.DETALLE1, TIPO_HABITACION.DETALLE2, TIPO_HABITACION.DETALLE3, TIPO_HABITACION.DETALLE4, TIPO_HABITACION.DETALLE5, TIPO_HABITACION.DETALLE6, TIPO_HABITACION.DETALLE7, TIPO_HABITACION.DETALLE8, TIPO_HABITACION.IMAGEN_HABITACION AS Expr1 FROM HABITACION INNER JOIN TIPO_HABITACION ON HABITACION.ID_TIPO_HABITACION = TIPO_HABITACION.ID_TIPO_HABITACION CROSS JOIN RESERVA_HABITACION WHERE (TIPO_HABITACION.DESCRIPCION_TIPO_HABITACION = @DESCRIPCION_TIPO_HABITACION) AND (HABITACION.ESTADO = 0) AND (HABITACION.PISO = @PISO)">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="DropDownList5" Name="DESCRIPCION_TIPO_HABITACION" PropertyName="SelectedValue" />
-                <asp:ControlParameter ControlID="DropDownList6" Name="PISO" PropertyName="SelectedValue" />
-            </SelectParameters>
-        </asp:SqlDataSource>
+        <br />
         <br />
         <asp:MultiView ID="MultiView1" runat="server" OnActiveViewChanged="MultiView1_ActiveViewChanged" >
         <div>
@@ -1008,14 +956,14 @@
      <asp:ValidationSummary ID="ValidationSummary1" runat="server" Font-Size="Small" ForeColor="Red" />
       <p>
         
-          <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource4" >
+          <asp:GridView ID="GridView5" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource4" AllowPaging="True" AllowSorting="True" OnSelectedIndexChanged="GridView5_SelectedIndexChanged" >
               <Columns>
                   <asp:CommandField ShowSelectButton="True" />
                   <asp:BoundField DataField="DESCRIPCION_SERVICIO" HeaderText="DESCRIPCION_SERVICIO" SortExpression="DESCRIPCION_SERVICIO" />
                   <asp:BoundField DataField="PRECIO_SERVICIO" HeaderText="PRECIO_SERVICIO" SortExpression="PRECIO_SERVICIO" />
               </Columns>
           </asp:GridView>
-          <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ProyectoV1.Properties.Settings.Software2 %>" SelectCommand="SELECT [DESCRIPCION_SERVICIO], [PRECIO_SERVICIO] FROM [SERVICIO]"></asp:SqlDataSource>
+          <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:software2ConnectionString %>" SelectCommand="SELECT [DESCRIPCION_SERVICIO], [PRECIO_SERVICIO] FROM [SERVICIO]"></asp:SqlDataSource>
       </p>
       <p>
         
@@ -1024,9 +972,6 @@
         
           &nbsp;</p>
       <div>
-          <asp:GridView ID="GridView6" runat="server" DataSourceID="SqlDataSource5">
-          </asp:GridView>
-          <asp:SqlDataSource ID="SqlDataSource5" runat="server"></asp:SqlDataSource>
       </div>
       <p>
         
