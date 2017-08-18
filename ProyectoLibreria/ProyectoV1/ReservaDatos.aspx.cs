@@ -28,19 +28,21 @@ namespace ProyectoV1
             SqlConnection cn = cc.Conectar();
 
             String cedula;
-            cedula = txtCedula.Text;
+            cedula = txtRUC.Text;
             if (v.VerificarCedula(cedula))
             {
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("insert into Cliente values ('" + txtCedula.Text.Trim() + "','"
+                    SqlCommand cmd = new SqlCommand("insert into Papeleria values ('" + txtRUC.Text.Trim() + "','"
                             + txtNombre.Text.Trim() + "','"
-                            + txtApellido.Text.Trim() + "','"
+                            + txtContra.Text.Trim() + "','"
                             + txtDireccion.Text.Trim() + "','"
+                            + txtCiudad.Text.Trim() + "','"
+                            + txtTelefono.Text.Trim() + "','"
                             + txtCorreo.Text.Trim() + "','"
-                            + txtTelefono.Text.Trim() + "')", cn);
+                            + txtLink.Text.Trim() + "')", cn);
                     cmd.ExecuteNonQuery();
-                    Response.Redirect("PagoTarjeta.aspx");
+                    Response.Redirect("Inicio.aspx");
                     cn.Close();
                 }
                 catch (Exception exception)

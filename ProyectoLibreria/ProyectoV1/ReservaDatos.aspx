@@ -27,60 +27,65 @@
                 <asp:Label ID="Label16" runat="server" Text="Ruc:" Font-Size="Medium" Font-Bold="True" Font-Italic="False"></asp:Label>
                 </td>
                 <td style="width: 297px">
-                <asp:TextBox ID="txtCedula" runat="server" Width="174px" Font-Size="Medium" BackColor="#BEAF7B" ForeColor="#333300" OnTextChanged="txtCedula_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="txtRUC" runat="server" Width="174px" Font-Size="Medium" BackColor="#BEAF7B" ForeColor="#333300" OnTextChanged="txtCedula_TextChanged"></asp:TextBox>
                 </td>
                 <td>
                     <br />
-                <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtCedula" Display="Dynamic" ErrorMessage="Solo Numeros" ValidationExpression="([0-9]|-)*" ValidationGroup="Identificacion" Font-Size="Medium" ForeColor="White">Ingrese Solo Numeros</asp:RegularExpressionValidator>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtCedula" Display="Dynamic" ErrorMessage="Ingrese su N° de Identificacion">*</asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtRUC" Display="Dynamic" ErrorMessage="Solo Numeros" ValidationExpression="([0-9]|-)*" ValidationGroup="Identificacion" Font-Size="Medium" ForeColor="White">Ingrese Solo Numeros</asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtRUC" Display="Dynamic" ErrorMessage="Ingrese su N° de Ruc correcto">*</asp:RequiredFieldValidator>
                 <asp:Label ID="mensaje" runat="server" Font-Size="Medium" ForeColor="White"></asp:Label>
                 </td>
                 </tr>
             <tr>
-                <td style="width: 162px"><asp:Label ID="Label2" runat="server" Font-Size="Medium" Text="Primer Nombre:" Font-Bold="True"></asp:Label></td>
+                <td style="width: 162px"><asp:Label ID="Label2" runat="server" Font-Size="Medium" Text="Nombre papeleria:" Font-Bold="True"></asp:Label></td>
                 <td style="width: 297px"><asp:TextBox ID="txtNombre" runat="server" Width="269px" ValidateRequestMode="Enabled" Font-Size="Small" BackColor="#BEAF7B"></asp:TextBox></td>
-                <td><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtNombre" ErrorMessage="Ingrese Solo Letras" ValidationExpression="([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)" ValidationGroup="SoloLetras" Display="Dynamic" ForeColor="White" Font-Size="Medium">Ingrese Solo Un Nombre</asp:RegularExpressionValidator>
-         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtNombre" Display="Dynamic" ErrorMessage="Ingrese un Nombre">*</asp:RequiredFieldValidator></td>
+                <td>&nbsp;</td>
 
             </tr>
             <tr>
-                <td style="width: 162px"><asp:Label ID="Label8" runat="server" Font-Size="Medium" Text="Primer Apellido:" Font-Bold="True"></asp:Label></td>
+                <td style="width: 162px"><asp:Label ID="Label8" runat="server" Font-Size="Medium" Text="Direccion:" Font-Bold="True"></asp:Label></td>
                 <td style="width: 297px">
-                <asp:TextBox ID="txtApellido" runat="server" Width="269px" Font-Size="Small" OnTextChanged="TextBox3_TextChanged" BackColor="#BEAF7B"></asp:TextBox>
+                <asp:TextBox ID="txtDireccion" runat="server" Width="269px" Font-Size="Small" OnTextChanged="TextBox3_TextChanged" BackColor="#BEAF7B"></asp:TextBox>
+               <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Ingrese la Dirección">*</asp:RequiredFieldValidator>
                 </td>
-                <td>
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtApellido" ErrorMessage="Ingrese Solo Letras" ValidationExpression="[a-zA-Z]*" ValidationGroup="SoloLetrasApellido" Display="Dynamic" ForeColor="White" Font-Size="Medium">Ingrese Solo Apellido Paterno</asp:RegularExpressionValidator>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtApellido" Display="Dynamic" ErrorMessage="Ingrese un Apellido">*</asp:RequiredFieldValidator>
-                </td>
-                
             </tr>
             <tr>
-                <td style="width: 162px"><asp:Label ID="Label1" runat="server" Font-Size="Medium" Text="Teléfono: " Font-Bold="True"></asp:Label></td>
-                <td style="width: 297px"><asp:TextBox ID="txtTelefono" runat="server" Width="269px" Font-Size="Small" OnTextChanged="TextBox4_TextChanged" BackColor="#BEAF7B"></asp:TextBox></td>
-                <td><asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtTelefono" ErrorMessage="Ingrese Un Numero Válido" ValidationExpression="([0-9]|-)*" ValidationGroup="telefono" Display="Dynamic" ForeColor="White" Font-Size="Medium">Ingrese solo números</asp:RegularExpressionValidator>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtTelefono" ErrorMessage="Ingrese un Teléfono">*</asp:RequiredFieldValidator>
+                <td style="width: 162px"><asp:Label ID="Label1" runat="server" Font-Size="Medium" Text="Telefono: " Font-Bold="True"></asp:Label></td>
+                <td style="width: 297px"><asp:TextBox ID="txtCiudad" runat="server" Width="269px" Font-Size="Small" OnTextChanged="TextBox4_TextChanged" BackColor="#BEAF7B"></asp:TextBox></td>
+                <td><asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtCiudad" ErrorMessage="Ingrese un ciudad correcta" ValidationExpression="([0-9]|-)*" ValidationGroup="txtCiudad" Display="Dynamic" ForeColor="White" Font-Size="Medium">Ingrese solo números</asp:RegularExpressionValidator>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtCiudad" ErrorMessage="Ingrese la ciudad de la papeleria">*</asp:RequiredFieldValidator>
         </td>
             </tr>
             <tr>
-                <td style="width: 162px"><asp:Label ID="Label3" runat="server" Font-Size="Medium" Text="Dirección:" Font-Bold="True"></asp:Label></td>
-                <td style="width: 297px"><asp:TextBox ID="txtDireccion" runat="server" Width="269px" Font-Size="Small" BackColor="#BEAF7B"></asp:TextBox></td>
+                <td style="width: 162px"><asp:Label ID="Label3" runat="server" Font-Size="Medium" Text="Ciudad:" Font-Bold="True"></asp:Label></td>
+                <td style="width: 297px"><asp:TextBox ID="txtTelefono" runat="server" Width="269px" Font-Size="Small" BackColor="#BEAF7B"></asp:TextBox></td>
                 <td>         
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtDireccion" ErrorMessage="Ingrese la Dirección">*</asp:RequiredFieldValidator>
                 <asp:Localize ID="Localize1" runat="server"></asp:Localize>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtTelefono" ErrorMessage="Ingrese el telefono">*</asp:RequiredFieldValidator>
     </td>
             </tr>
             <tr>
-                <td style="width: 162px"><asp:Label ID="Label4" runat="server" Font-Size="Medium" Text="Ciudad: " Font-Bold="True"></asp:Label></td>
-                <td style="width: 297px"><asp:TextBox ID="txtCuidad" runat="server" Width="177px" Font-Size="Small" BackColor="#BEAF7B"></asp:TextBox></td>
-                <td> <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtCuidad" ErrorMessage="Ingrese Solo Letras" ValidationExpression="[a-zA-Z]*" ValidationGroup="SoloLetrasCuidad" Display="Dynamic" ForeColor="White" Font-Size="Medium">Ingrese solo letras</asp:RegularExpressionValidator>
-         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtCuidad" Display="Dynamic" ErrorMessage="Ingrese la Cuidad">*</asp:RequiredFieldValidator></td>
+                <td style="width: 162px"><asp:Label ID="Label4" runat="server" Font-Size="Medium" Text="Correo Electronico:" Font-Bold="True"></asp:Label></td>
+                <td style="width: 297px"><asp:TextBox ID="txtCorreo" runat="server" Width="177px" Font-Size="Small" BackColor="#BEAF7B"></asp:TextBox></td>
+                <td><asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese un correo electrónico correcto" ValidationExpression="[\w]+@{1}[\w]+\.[a-z]{2,3}" ValidationGroup="Correo Electrónico" Display="Dynamic" Font-Overline="True" Font-Size="Medium" ForeColor="White">Correo incorrecto</asp:RegularExpressionValidator>
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtCorreo" Display="Dynamic" ErrorMessage="Ingrese el correo electronico">*</asp:RequiredFieldValidator></td>
             </tr>
             <tr>
-                <td style="width: 162px"><asp:Label ID="Label6" runat="server" Font-Size="Medium" Text="Correo electrónico:" Font-Bold="True"></asp:Label></td>
-                <td style="width: 297px"> <asp:TextBox ID="txtCorreo" runat="server" Width="269px" Font-Size="Small" BackColor="#BEAF7B"></asp:TextBox></td>
-                <td><asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtCorreo" ErrorMessage="Ingrese un correo electrónico correcto" ValidationExpression="[\w]+@{1}[\w]+\.[a-z]{2,3}" ValidationGroup="Correo Electrónico" Display="Dynamic" Font-Overline="True" Font-Size="Medium" ForeColor="White">Correo Incorrecto</asp:RegularExpressionValidator>
-         
-          <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtCorreo" Display="Dynamic" ErrorMessage="Correo Incorrecto">*</asp:RequiredFieldValidator></td>
+                <td style="width: 162px"><asp:Label ID="Label6" runat="server" Font-Size="Medium" Text="Link de la imagen de la papeleria:" Font-Bold="True"></asp:Label></td>
+                <td style="width: 297px"> <asp:TextBox ID="txtLink" runat="server" Width="269px" Font-Size="Small" BackColor="#BEAF7B"></asp:TextBox></td>
+                <td><asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtLink" Display="Dynamic" ErrorMessage="Ingrese la imagen">*</asp:RequiredFieldValidator></td>
+            </tr>
+            <tr>
+                <td style="width: 162px"><asp:Label ID="Label18" runat="server" Font-Size="Medium" Text="Contraseña:" Font-Bold="True"></asp:Label></td>
+                <td style="width: 297px"> <asp:TextBox ID="txtContra" runat="server" Width="269px" Font-Size="Small" BackColor="#BEAF7B" TextMode="Password"></asp:TextBox></td>
+                <td><asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtContra" Display="Dynamic" ErrorMessage="Ingrese la imagen">*</asp:RequiredFieldValidator></td>
+  
+            </tr>
+            <tr>
+                <td style="width: 162px"><asp:Label ID="Label19" runat="server" Font-Size="Medium" Text="Contraseña:" Font-Bold="True"></asp:Label></td>
+                <td style="width: 297px"> <asp:TextBox ID="txtContra0" runat="server" Width="269px" Font-Size="Small" BackColor="#BEAF7B" TextMode="Password"></asp:TextBox></td>
+                <td><asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtContra0" Display="Dynamic" ErrorMessage="Ingrese la imagen">*</asp:RequiredFieldValidator></td>
+ 
             </tr>
         </table>
         <p></p>

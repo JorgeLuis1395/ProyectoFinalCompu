@@ -13,5 +13,13 @@ namespace ProyectoV1
         {
 
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string url = GridView1.Rows[GridView1.SelectedIndex].Cells[4].Text;
+
+            Image4.ImageUrl = url;
+
+        }
     }
 }

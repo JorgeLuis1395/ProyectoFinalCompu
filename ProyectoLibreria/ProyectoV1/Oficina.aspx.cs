@@ -29,5 +29,17 @@ namespace ProyectoV1
         {
 
         }
+
+        protected void SqlDataSource10_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void GridView10_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string url = GridView10.Rows[GridView10.SelectedIndex].Cells[4].Text;
+           
+            Image32.ImageUrl = url;
+        }
     }
 }

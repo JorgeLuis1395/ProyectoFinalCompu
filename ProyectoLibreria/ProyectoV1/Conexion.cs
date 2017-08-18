@@ -14,7 +14,7 @@ namespace ProyectoV1
         {
             try
             {
-                SqlConnection cn = new SqlConnection("Data Source = software2h.database.windows.net; Initial Catalog = software2; User ID = software2; Password = software_2");
+                SqlConnection cn = new SqlConnection("Data Source = bookfast.database.windows.net; Initial Catalog = BookFast; User ID = BOOKFAST; Password = Libreria123");
                 cn.Open();
                 return cn;
             }

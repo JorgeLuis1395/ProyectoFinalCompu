@@ -65,7 +65,7 @@
     </div>
     <p>
                           <center> 
-                              <asp:DropDownList ID="DropDownList10" runat="server" BackColor="#3E130D" Font-Size="Medium" ForeColor="#F3D090" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                              <asp:DropDownList ID="DropDownList10" runat="server" BackColor="#3E130D" Font-Size="Medium" ForeColor="#F3D090" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">
                                   <asp:ListItem Value="0">Seleccionar.....</asp:ListItem>
                                   <asp:ListItem Value="11">Agendas</asp:ListItem>
                                   <asp:ListItem Value="12">Banderitas</asp:ListItem>
@@ -117,7 +117,11 @@
 
                               <br />
                               <br />
-                              <asp:GridView ID="GridView10" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource10" Font-Size="Medium" ForeColor="Black" GridLines="Vertical">
+                                  <asp:Image ID="Image32" runat="server" Height="334px" Width="342px" />
+
+                              <br />
+                              <br />
+                              <asp:GridView ID="GridView10" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="SqlDataSource10" Font-Size="Medium" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="GridView10_SelectedIndexChanged" style="margin-right: 220px" Width="913px">
                                   <AlternatingRowStyle BackColor="White" />
                                   <Columns>
                                       <asp:CommandField ShowSelectButton="True" />
@@ -136,11 +140,15 @@
                                   <SortedDescendingCellStyle BackColor="#EAEAD3" />
                                   <SortedDescendingHeaderStyle BackColor="#575357" />
                               </asp:GridView>
-                              <asp:SqlDataSource ID="SqlDataSource10" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastConnectionString2 %>" SelectCommand="SELECT [DESCRIPCION], [PRECIO], [STOCK], [IMAGENPROD] FROM [DETALLEPRODUCTO] WHERE ([ID_DETALLE] = @ID_DETALLE)">
+                              <asp:SqlDataSource ID="SqlDataSource10" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastConnectionString2 %>" SelectCommand="SELECT [DESCRIPCION], [PRECIO], [STOCK], [IMAGENPROD] FROM [DETALLEPRODUCTO] WHERE ([ID_PRODUCTO] = @ID_PRODUCTO2)" OnSelecting="SqlDataSource10_Selecting">
                                   <SelectParameters>
-                                      <asp:ControlParameter ControlID="DropDownList10" Name="ID_DETALLE" PropertyName="SelectedValue" Type="Int32" />
+                                      <asp:ControlParameter ControlID="DropDownList10" Name="ID_PRODUCTO2" PropertyName="SelectedValue" Type="Int32" />
                                   </SelectParameters>
                               </asp:SqlDataSource>
+                              <br />
+                              <br />
+                              <asp:Panel ID="Panel1" runat="server">
+                              </asp:Panel>
                               <br />
                               <br />
 

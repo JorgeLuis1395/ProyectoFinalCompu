@@ -18,4 +18,10 @@
   <parameter name="BookFastDBConnectionString2-Web.config Connection String" description="BookFastDBConnectionString2 Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=bookfast.database.windows.net;Initial Catalog=BookFastDB;User ID=BOOKFAST;Password=Libreria123" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\Usuario\\OneDrive\\Proyectos\\ProyectoLibreria\\ProyectoV1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BookFastDBConnectionString2']/@connectionString" />
   </parameter>
+  <parameter name="BookFastDBConnectionString3-Web.config Connection String" description="BookFastDBConnectionString3 Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=bookfast.database.windows.net;Initial Catalog=BookFastDB;Persist Security Info=True;User ID=BOOKFAST;Password=Libreria123" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Usuario\\OneDrive\\Proyectos\\ProyectoLibreria\\ProyectoV1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BookFastDBConnectionString3']/@connectionString" />
+  </parameter>
+  <parameter name="BookFastConnectionString2-Web.config Connection String" description="BookFastConnectionString2 Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="Data Source=bookfast.database.windows.net;Initial Catalog=BookFast;Persist Security Info=True;User ID=BOOKFAST;Password=Libreria123" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Usuario\\OneDrive\\Proyectos\\ProyectoLibreria\\ProyectoV1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BookFastConnectionString2']/@connectionString" />
+  </parameter>
 </parameters>

@@ -13,11 +13,11 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/Imagenes/ImagenesPrincipales/iconbf2-2.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Imagenes/ImagenesPrincipales/web.ico" rel="shortcut icon" type="image/x-icon" />
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
-    <form runat="server" ImageUrl="~/Imagenes/ImagenesPrincipales/Logopaper.jpg" style="background-position: center; background-image: url('/Imagenes/ImagenesPrincipales/center.jpg'); background-attachment: fixed; background-repeat: repeat;">
+    <form runat="server" ImageUrl="~/Imagenes/ImagenesPrincipales/Logopaper.jpg" style="background-position: center; background-image: url('/Imagenes/ImagenesPrincipales/center.jpg'); background-attachment: fixed; background-repeat: repeat; color: #000000;">
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -54,21 +54,21 @@
                 <ul class="dropdown-menu">
                     <li><a runat="server" href="~/Oficina.aspx">Oficina</a></li>
                     <li><a runat="server" href="~/Informatica.aspx">Tecnologia</a></li>
-                    <li><a runat="server" href="~/UtilesEscolares.aspx">Utiles Escolares</a></li>
+                    <li><a runat="server" href="~/Utiles.aspx">Utiles Escolares</a></li>
                 </ul>
             </li>
-                        <li><a runat="server" href="~/Servicios.aspx">Papelerias</a></li>
+                        <li><a runat="server" href="~/Papelerias_Registradas.aspx">Papelerias</a></li>
                      </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ">Registro </a>
+                               <li class="dropdown"><a runat="server" href="~/ReservaDatos">Registro </a>
                                 <ul class="dropdown-menu">
-                                    <li><a runat="server" href="~/Informatica.aspx">Clientes</a></li>
                                     <li><a runat="server" href="~/ReservaDatos.aspx">Papeleria</a></li>
                                </ul>
                             </li>
-                             <li><a runat="server" href="">Iniciar sesión</a></li>
+                             <li><a runat="server" href="~/Login">Iniciar sesión</a></li>
+                               
                             </ul>
                         </AnonymousTemplate>
                      </asp:LoginView>
@@ -79,6 +79,23 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
+            <center> <h3 style="color: #000000; text-align: center;">SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
+    
+    
+<div class="custom" style="width: 650px; height: 219px">
+	
+<div class="social_ball">
+  <div class="bola_social">
+    <div class="bola_blanca" style="width: 597px; vertical-align: bottom; position: relative; text-align: center; left: 5px; top: 11px;"><a href="https://www.facebook.com/BookFast-118047832187198/" target="_blank"><img src="/Imagenes/ImagenesPrincipales/face.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: xx-large;"><a href="https://twitter.com/BookFastEc" target="_blank"><img src="/Imagenes/ImagenesPrincipales/twiter.png" alt="" style="margin-top: 0px"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+  </div>
+</div></div>
+        </div>
+    
+    
+        </div>
+  
+    </div>
+<center><h3 style="color: #000000; text-align: center;">Contactos: bookfast@hotmail.com </h3>
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Book Fast</p>
             </footer>

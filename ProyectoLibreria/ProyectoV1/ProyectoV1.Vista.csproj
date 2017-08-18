@@ -203,11 +203,22 @@
   <ItemGroup>
     <Content Include="AdminConsultas.aspx" />
     <Content Include="Imagenes\Bienvenidos.jpeg" />
-    <Content Include="Imagenes\ImagenesPrincipales\car3.png" />
-    <Content Include="Imagenes\ImagenesPrincipales\car2.jpg" />
-    <Content Include="Imagenes\ImagenesPrincipales\car1.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\articulospng.png" />
     <Content Include="Imagenes\ImagenesPrincipales\bookface.ico" />
+    <Content Include="Imagenes\ImagenesPrincipales\BOOKFAST.jpg" />
+    <Content Include="Imagenes\ImagenesPrincipales\center.jpg" />
+    <Content Include="Imagenes\ImagenesPrincipales\digital.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\face.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\faceportada.png" />
     <Content Include="Imagenes\ImagenesPrincipales\iconbf2.ico" />
+    <Content Include="Imagenes\ImagenesPrincipales\inicio3.jpg" />
+    <Content Include="Imagenes\ImagenesPrincipales\iniciocar.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\iniciocar2.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\logo2.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\Logopaper.jpg" />
+    <Content Include="Imagenes\ImagenesPrincipales\PRODUCTOS_2.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\proOficina.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\twiter.png" />
     <Content Include="Imagenes\ImagenesPrincipales\web.ico" />
     <Content Include="Imagenes\oficina\logooficina.png" />
     <Content Include="Imagenes\oficina\oficina1.jpg" />
@@ -240,24 +251,34 @@
     <Content Include="Imagenes\oficina\oficina7.jpg" />
     <Content Include="Imagenes\oficina\oficina8.jpg" />
     <Content Include="Imagenes\oficina\oficina9.png" />
+    <Content Include="Imagenes\tecnologia\tecnologia1.jpg" />
+    <Content Include="Imagenes\tecnologia\tecnologia2.png" />
+    <Content Include="Imagenes\tecnologia\tecnologia3.jpg" />
+    <Content Include="Imagenes\tecnologia\tecnologia4.jpg" />
+    <Content Include="Imagenes\tecnologia\tecnologia5.jpg" />
+    <Content Include="Imagenes\tecnologia\tecnologia6.jpg" />
+    <Content Include="Imagenes\tecnologia\tecnologia7.jpg" />
+    <Content Include="Imagenes\tecnologia\tecnologia8.jpg" />
+    <Content Include="Imagenes\tecnologia\tecnologicos.jpg" />
+    <Content Include="Imagenes\utiles\car.png" />
+    <Content Include="Imagenes\utiles\car4.jpg" />
+    <Content Include="Imagenes\utiles\car5.jpg" />
+    <Content Include="Imagenes\utiles\phoca_thumb_l_3.jpg" />
+    <Content Include="Imagenes\utiles\resal.jpg" />
     <Content Include="Imagenes\utiles\utiles.png" />
     <Content Include="Imagenes\oficina\oficina.png" />
     <Content Include="Imagenes\tecnologia\Tecnologia.png" />
-    <Content Include="Imagenes\ImagenesPrincipales\iniciocar2.png" />
-    <Content Include="Imagenes\ImagenesPrincipales\iniciocar.png" />
-    <Content Include="Imagenes\ImagenesPrincipales\twiter.png" />
-    <Content Include="Imagenes\ImagenesPrincipales\logo2.png" />
-    <Content Include="Imagenes\ImagenesPrincipales\center.jpg" />
-    <Content Include="Imagenes\ImagenesPrincipales\face.png" />
-    <Content Include="Imagenes\ImagenesPrincipales\Logopaper.jpg" />
     <Content Include="Imagenes\482335677.jpg" />
     <Content Include="Imagenes\gestionar-recursos-humanos-adaptandose-al-cambio-1.jpg" />
     <Content Include="Imagenes\inicio.jpg" />
     <Content Include="Imagenes\MantenimientoServidor.jpg" />
+    <Content Include="Imagenes\utiles\utilescarri.jpg" />
     <Content Include="Imagenes\utiles\utiles_escolares.png" />
     <Content Include="IngresoProductos.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="PapeleriaInicio.aspx" />
-    <Content Include="UtilesEscolares.aspx" />
+    <Content Include="ReservaDatos.aspx" />
+    <Content Include="Utiles.aspx" />
     <Content Include="Oficina.aspx" />
     <Content Include="Informatica.aspx" />
     <Content Include="PagoTarjeta.aspx" />
@@ -277,8 +298,7 @@
     <Content Include="fonts\Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="fonts\Account\VerifyPhoneNumber.aspx" />
     <Content Include="Reserva.aspx" />
-    <Content Include="ReservaDatos.aspx" />
-    <Content Include="Servicios.aspx" />
+    <Content Include="Papelerias_Registradas.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -361,6 +381,13 @@
     <Compile Include="IngresoProductos.aspx.designer.cs">
       <DependentUpon>IngresoProductos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Papeleria.Master.cs">
       <DependentUpon>Papeleria.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -375,12 +402,19 @@
     <Compile Include="PapeleriaInicio.aspx.designer.cs">
       <DependentUpon>PapeleriaInicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UtilesEscolares.aspx.cs">
-      <DependentUpon>UtilesEscolares.aspx</DependentUpon>
+    <Compile Include="ReservaDatos.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ReservaDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReservaDatos.aspx.designer.cs">
+      <DependentUpon>ReservaDatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles.aspx.cs">
+      <DependentUpon>Utiles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UtilesEscolares.aspx.designer.cs">
-      <DependentUpon>UtilesEscolares.aspx</DependentUpon>
+    <Compile Include="Utiles.aspx.designer.cs">
+      <DependentUpon>Utiles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Oficina.aspx.cs">
       <DependentUpon>Oficina.aspx</DependentUpon>
@@ -525,19 +559,12 @@
     <Compile Include="Reserva.aspx.designer.cs">
       <DependentUpon>Reserva.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ReservaDatos.aspx.cs">
-      <DependentUpon>ReservaDatos.aspx</DependentUpon>
+    <Compile Include="Papelerias_Registradas.aspx.cs">
+      <DependentUpon>Papelerias_Registradas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ReservaDatos.aspx.designer.cs">
-      <DependentUpon>ReservaDatos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Servicios.aspx.cs">
-      <DependentUpon>Servicios.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Servicios.aspx.designer.cs">
-      <DependentUpon>Servicios.aspx</DependentUpon>
+    <Compile Include="Papelerias_Registradas.aspx.designer.cs">
+      <DependentUpon>Papelerias_Registradas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>

@@ -12,7 +12,7 @@ namespace ProyectoV1.Account
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            RegisterHyperLink.NavigateUrl = "Register";
+            RegisterHyperLink.NavigateUrl = "Registrese";
             // Habilite esta opción una vez tenga la confirmación de la cuenta habilitada para la funcionalidad de restablecimiento de contraseña
             //ForgotPasswordHyperLink.NavigateUrl = "Forgot";
            // OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
@@ -33,15 +33,15 @@ namespace ProyectoV1.Account
 
                 // Esto no cuenta los errores de inicio de sesión hacia el bloqueo de cuenta
                 // Para habilitar los errores de contraseña para desencadenar el bloqueo, cambie a shouldLockout: true
-                var result = signinManager.PasswordSignIn(Email.Text, Password.Text, RememberMe.Checked, shouldLockout: false);
+                var result = signinManager.PasswordSignIn(Email.Text, Password.Text, RememberMe.Checked, shouldLockout: true);
 
                 switch (result)
                 {
                     case SignInStatus.Success:
-                        IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+                        IdentityHelper.RedirectToReturnUrl(Request.QueryString["/PapeleriaInicio"], Response);
                         break;
                     case SignInStatus.LockedOut:
-                        Response.Redirect("/Account/Lockout");
+                        Response.Redirect("/ReservaDatos");
                         break;
                     case SignInStatus.RequiresVerification:
                         Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 

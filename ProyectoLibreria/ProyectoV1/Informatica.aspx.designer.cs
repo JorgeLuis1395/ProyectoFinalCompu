@@ -31,13 +31,13 @@ namespace ProyectoV1 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// Control Informatica1.
+        /// Control Image4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Informatica1;
+        protected global::System.Web.UI.WebControls.Image Image4;
         
         /// <summary>
         /// Control GridView1.
@@ -49,12 +49,12 @@ namespace ProyectoV1 {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// Control PresentaciondatosOficina.
+        /// Control DatosInformatica.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource PresentaciondatosOficina;
+        protected global::System.Web.UI.WebControls.SqlDataSource DatosInformatica;
     }
 }

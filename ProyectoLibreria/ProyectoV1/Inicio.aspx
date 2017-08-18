@@ -24,7 +24,7 @@
     <div class="carousel-inner" role="listbox">
 
      <div class="item active">
-     <center><img src="Imagenes/ImagenesPrincipales/car3.png" style="width: 932px; height: 407px" /><br />
+     <center><img src="Imagenes/ImagenesPrincipales/PRODUCTOS_2.png" style="width: 932px; height: 407px" /><br />
          <br />
          </center>
      <div class="carousel-caption" style="left: 15%; right: 15%; bottom: 20px">
@@ -38,28 +38,28 @@
     </div>
     
       <div class="item">
-       <center> <img src="Imagenes/ImagenesPrincipales/iniciocar2.png" width="932" height="407" /></center>
+       <center> <img src="Imagenes/ImagenesPrincipales/articulospng.png" width="932" height="407" /></center>
         <div class="carousel-caption">
          
         </div>
       </div>
 
       <div class="item">
-       <center> <img src="Imagenes/ImagenesPrincipales/car1.png"  width="932" height="407" /></center>
+       <center> <img src="Imagenes/ImagenesPrincipales/digital.png"  width="932" height="407" /></center>
         <div class="carousel-caption">
           
         </div>
       </div>
 
       <div class="item">
-        <center><img src="Imagenes/ImagenesPrincipales/car2.jpg"   width="932" height="407" /></center>
+        <center><img src="Imagenes/ImagenesPrincipales/proOficina.png"   width="932" height="407" /></center>
         <div class="carousel-caption">
         
         </div>
       </div>
 
       <div class="item">
-        <center><img src="Imagenes/ImagenesPrincipales/car3.jpg"  width="932" height="407" /></center>
+        <center><img src="Imagenes/ImagenesPrincipales/iniciocar2.png"  width="932" height="407" /></center>
         <div class="carousel-caption">
          
         </div>
@@ -88,19 +88,4 @@
     <h1 style="width: 995px"> <span style="font-size: xx-large;">Visión:</span> </h1>
     <p class="lead" style="width: 984px"><span style="font-family: arial,helvetica,sans-serif;"><span style="font-size: medium;">Apostamos firmemente a la adopción e implementación de las tecnologías modernas de información, que nos permitan avanzar de forma importante en la manera en la que se venden productos. Estamos convencidos que usando el internet y no ligando a una sola papelería al cliente, el mismo tendrá no solo una oportunidad de elegir mejor sino de realizar con mayor efectividad la misma. Para el 2020, queremos ser la empresa líder de venta de productos por medio del internet de red de papelerías en el Ecuador </span></span></p>
         <p> &nbsp;</p>
-      <center> <h3 style="color: #FFFFFF; text-align: center;">SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
-    </div>
-    
-    
-<div class="custom" style="width: 650px; height: 219px">
-	
-<div class="social_ball">
-  <div class="bola_social">
-    <div class="bola_blanca" style="width: 597px; vertical-align: bottom; position: relative; text-align: center; left: 303px; top: 3px;"><a href="https://www.facebook.com/BookFast-118047832187198/" target="_blank"><img src="/Imagenes/ImagenesPrincipales/face.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: xx-large;"><a href="https://twitter.com/BookFastEc" target="_blank"><img src="/Imagenes/ImagenesPrincipales/twiter.png" alt="" style="margin-top: 0px"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
-  </div>
-</div></div>
-        </div>
-  
-    </div>
-<center><h3 style="color: #FFFFFF; text-align: center;">Contactos: bookfast@hotmail.com </h3>
     </span></asp:Content>
