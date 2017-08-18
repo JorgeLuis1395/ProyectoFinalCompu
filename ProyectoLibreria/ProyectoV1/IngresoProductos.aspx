@@ -20,15 +20,21 @@
                 <asp:Label ID="Labelarea" runat="server" Text="Área:" Font-Size="Medium" Font-Bold="True" Font-Italic="False"></asp:Label>
                 </td>
                 <td style="border-style: groove">
-                    <asp:DropDownList ID="DropDownList1" runat="server" BackColor="#C5B67F" Font-Size="Medium">
+                    <asp:DropDownList ID="DropDownList1" runat="server" BackColor="#C5B67F" Font-Size="Medium" DataSourceID="Conexionarea" DataTextField="NOMBREAREA" DataValueField="NOMBREAREA">
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="Conexionarea" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString3 %>" SelectCommand="SELECT [NOMBREAREA] FROM [AREA]"></asp:SqlDataSource>
                 </td>
                 </tr>
             <tr>
                 <td style="border-style: groove;"><asp:Label ID="LabeltipoProduct" runat="server" Font-Size="Medium" Text="Tipo de Producto:" Font-Bold="True"></asp:Label></td>
                 <td style="border-style: groove">
-                    <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#C4B480" Font-Size="Medium">
+                    <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#C4B480" Font-Size="Medium" DataSourceID="TipoProducto" DataTextField="PRODUCTO" DataValueField="PRODUCTO">
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="TipoProducto" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString %>" SelectCommand="SELECT [PRODUCTO] FROM [PRODUCTO] WHERE ([ID_AREA] = @ID_AREA)">
+                        <SelectParameters>
+                            <asp:ControlParameter ControlID="DropDownList1" Name="ID_AREA" PropertyName="SelectedValue" Type="Int32" />
+                        </SelectParameters>
+                    </asp:SqlDataSource>
                 </td>
 
             </tr>
@@ -52,13 +58,11 @@
                 </td>
             </tr>
             <tr>
-                <td style="border-style: groove;"><asp:Label ID="Labelimagen" runat="server" Font-Size="Medium" Text="Imagen del Producto:" Font-Bold="True"></asp:Label></td>
-                <td style="border-style: groove"> <asp:TextBox ID="txtimagen" runat="server" Width="269px" Font-Size="Medium" BackColor="#BEAF7B" BorderColor="#660066" ForeColor="#411E1C"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" BackColor="#401B17" BorderColor="#816330" Font-Size="Medium" ForeColor="#F0D190" Text="Examinar..." />
-                    &nbsp;
+                <td style="border-style: groove;"><asp:Label ID="Labelimagen" runat="server" Font-Size="Medium" Text="URL Imagen del Producto:" Font-Bold="True"></asp:Label></td>
+                <td style="border-style: groove"> <asp:TextBox ID="txtimagen" runat="server" Width="611px" Font-Size="Medium" BackColor="#BEAF7B" BorderColor="#660066" ForeColor="#411E1C"></asp:TextBox>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
                     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="ButtonAceptar" runat="server" BackColor="#401B17" BorderColor="#816330" Font-Size="Medium" ForeColor="#F0D190" Text="Aceptar" />
                     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             </tr>

@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <p></p><p></p><p></p><p>
-    <center> <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/utiles/utiles.png" Height="231px" Width="874px" /></center> 
+    <center> <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/utiles/utiles_escolares.png" Height="231px" Width="874px" /></center> 
    
     <br />
     <br />
@@ -65,13 +65,32 @@
     </div>
     <p>
                            &nbsp;<center> 
-        <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="SqlDataSource3" DataTextField="ATTRIBUTE_11" DataValueField="ATTRIBUTE_11" BackColor="#CDC98C" Font-Size="Large" ForeColor="#3E151B">
+        <asp:DropDownList ID="DropDownList3" runat="server" DataSourceID="coneccion12" DataTextField="PRODUCTO" DataValueField="PRODUCTO" BackColor="#CDC98C" Font-Size="Large" ForeColor="#3E151B">
         </asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastConnectionString %>" SelectCommand="SELECT [PRODUCTO] FROM [PRODUCTO] WHERE ([ID_AREA] = @ID_AREA)">
+        <asp:SqlDataSource ID="coneccion12" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString3 %>" SelectCommand="SELECT [PRODUCTO] FROM [PRODUCTO] WHERE ([ID_AREA] = @ID_AREA)">
             <SelectParameters>
                 <asp:Parameter DefaultValue="3" Name="ID_AREA" Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
+        <br />
+        <br />
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="presentardatos">
+            <Columns>
+                <asp:CommandField ShowSelectButton="True" />
+                <asp:BoundField DataField="DESCRIPCION" HeaderText="DESCRIPCION" SortExpression="DESCRIPCION" />
+                <asp:BoundField DataField="PRECIO" HeaderText="PRECIO" SortExpression="PRECIO" />
+                <asp:BoundField DataField="STOCK" HeaderText="STOCK" SortExpression="STOCK" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="presentardatos" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString3 %>" SelectCommand="SELECT [DESCRIPCION], [PRECIO], [STOCK], [IMAGENPROD] FROM [DETALLEPRODUCTO] WHERE ([ID_PRODUCTO] = @ID_PRODUCTO)">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="DropDownList3" Name="ID_PRODUCTO" PropertyName="SelectedValue" Type="Int32" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+        <br />
+        <br />
+
 
 
                             

@@ -63,12 +63,37 @@
         <a class="left carousel-control" data-slide="prev" href="#myCarousel" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span> </a><a class="right carousel-control" data-slide="next" href="#myCarousel" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span> </a>
     </div>
     <p>
-                          <center> <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="ATTRIBUTE_11" DataValueField="ATTRIBUTE_11" BackColor="#C5C48B" Font-Size="Large" ForeColor="#401B13">
+                          <center> <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="Informatica1" DataTextField="PRODUCTO" DataValueField="PRODUCTO" BackColor="#C5C48B" Font-Size="Large" ForeColor="#401B13">
                            </asp:DropDownList>
-                           <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString2 %>" SelectCommand="SELECT [PRODUCTO] FROM [PRODUCTO] WHERE ([ID_AREA] = @ID_AREA)">
-                               <SelectParameters>
-                                   <asp:Parameter DefaultValue="1" Name="ID_AREA" Type="Int32" />
-                               </SelectParameters>
-                           </asp:SqlDataSource>
+                              <asp:SqlDataSource ID="Informatica1" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString %>" SelectCommand="SELECT [PRODUCTO] FROM [PRODUCTO] WHERE ([ID_AREA] = @ID_AREA)">
+                                  <SelectParameters>
+                                      <asp:Parameter DefaultValue="1" Name="ID_AREA" Type="Int32" />
+                                  </SelectParameters>
+                              </asp:SqlDataSource>
 <p>
-                           &nbsp;</asp:Content>
+                           &nbsp;<p>
+                                  &nbsp;<p>
+                                  <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="PresentaciondatosOficina" ForeColor="Black" GridLines="Vertical">
+                                      <AlternatingRowStyle BackColor="White" />
+                                      <Columns>
+                                          <asp:CommandField ShowSelectButton="True" />
+                                          <asp:BoundField DataField="DESCRIPCION" HeaderText="DESCRIPCION" SortExpression="DESCRIPCION" />
+                                          <asp:BoundField DataField="PRECIO" HeaderText="PRECIO" SortExpression="PRECIO" />
+                                          <asp:BoundField DataField="STOCK" HeaderText="STOCK" SortExpression="STOCK" />
+                                      </Columns>
+                                      <FooterStyle BackColor="#CCCC99" />
+                                      <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+                                      <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+                                      <RowStyle BackColor="#F7F7DE" />
+                                      <SelectedRowStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" />
+                                      <SortedAscendingCellStyle BackColor="#FBFBF2" />
+                                      <SortedAscendingHeaderStyle BackColor="#848384" />
+                                      <SortedDescendingCellStyle BackColor="#EAEAD3" />
+                                      <SortedDescendingHeaderStyle BackColor="#575357" />
+                                  </asp:GridView>
+                                  <asp:SqlDataSource ID="PresentaciondatosOficina" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString %>" SelectCommand="SELECT [DESCRIPCION], [PRECIO], [STOCK], [IMAGENPROD] FROM [DETALLEPRODUCTO] WHERE ([ID_DETALLE] = @ID_DETALLE)">
+                                      <SelectParameters>
+                                          <asp:ControlParameter ControlID="DropDownList1" Name="ID_DETALLE" PropertyName="SelectedValue" Type="Int32" />
+                                      </SelectParameters>
+                                  </asp:SqlDataSource>
+</asp:Content>

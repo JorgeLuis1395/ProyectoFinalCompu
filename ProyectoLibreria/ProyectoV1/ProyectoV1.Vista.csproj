@@ -203,8 +203,13 @@
   <ItemGroup>
     <Content Include="AdminConsultas.aspx" />
     <Content Include="Imagenes\Bienvenidos.jpeg" />
+    <Content Include="Imagenes\ImagenesPrincipales\car3.png" />
+    <Content Include="Imagenes\ImagenesPrincipales\car2.jpg" />
+    <Content Include="Imagenes\ImagenesPrincipales\car1.png" />
     <Content Include="Imagenes\ImagenesPrincipales\bookface.ico" />
     <Content Include="Imagenes\ImagenesPrincipales\iconbf2.ico" />
+    <Content Include="Imagenes\ImagenesPrincipales\web.ico" />
+    <Content Include="Imagenes\oficina\logooficina.png" />
     <Content Include="Imagenes\oficina\oficina1.jpg" />
     <Content Include="Imagenes\oficina\oficina10.jpg" />
     <Content Include="Imagenes\oficina\oficina11.jpg" />
@@ -249,6 +254,7 @@
     <Content Include="Imagenes\gestionar-recursos-humanos-adaptandose-al-cambio-1.jpg" />
     <Content Include="Imagenes\inicio.jpg" />
     <Content Include="Imagenes\MantenimientoServidor.jpg" />
+    <Content Include="Imagenes\utiles\utiles_escolares.png" />
     <Content Include="IngresoProductos.aspx" />
     <Content Include="PapeleriaInicio.aspx" />
     <Content Include="UtilesEscolares.aspx" />
