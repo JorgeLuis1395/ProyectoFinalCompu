@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Papeleria.Master" AutoEventWireup="true" CodeBehind="Utiles.aspx.cs" Inherits="ProyectoV1.Utiles" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Utiles.aspx.cs" Inherits="ProyectoV1.Utiles" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <p></p><p></p><p></p><p>
     <center> <asp:Image ID="Image2" runat="server" ImageUrl="~/Imagenes/utiles/utiles_escolares.png" Height="231px" Width="874px" /></center> 
@@ -128,14 +128,14 @@
         <br />
         <br />
         <br />
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="DatosUtilesEscolares" Font-Size="Medium" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataSourceID="DatosUtilesEscolares" Font-Size="Medium" ForeColor="Black" GridLines="Vertical" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="485px">
             <AlternatingRowStyle BackColor="White" />
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="DESCRIPCION" HeaderText="DESCRIPCION" SortExpression="DESCRIPCION" />
                 <asp:BoundField DataField="PRECIO" HeaderText="PRECIO" SortExpression="PRECIO" />
                 <asp:BoundField DataField="STOCK" HeaderText="STOCK" SortExpression="STOCK" />
-                <asp:BoundField DataField="IMAGENPROD" HeaderText="IMAGENPROD" SortExpression="IMAGENPROD" Visible="False" />
+                <asp:BoundField DataField="IMAGENPROD" HeaderText="IMAGENPROD" SortExpression="IMAGENPROD" />
             </Columns>
             <FooterStyle BackColor="#CCCC99" />
             <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />

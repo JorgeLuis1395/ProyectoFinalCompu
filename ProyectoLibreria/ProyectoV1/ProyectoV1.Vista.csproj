@@ -202,7 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminConsultas.aspx" />
+    <Content Include="CarritoCompras.aspx" />
     <Content Include="Imagenes\Bienvenidos.jpeg" />
+    <Content Include="Imagenes\ImagenesPrincipales\carrito.png" />
     <Content Include="Imagenes\ImagenesPrincipales\articulospng.png" />
     <Content Include="Imagenes\ImagenesPrincipales\bookface.ico" />
     <Content Include="Imagenes\ImagenesPrincipales\BOOKFAST.jpg" />
@@ -251,6 +253,7 @@
     <Content Include="Imagenes\oficina\oficina7.jpg" />
     <Content Include="Imagenes\oficina\oficina8.jpg" />
     <Content Include="Imagenes\oficina\oficina9.png" />
+    <Content Include="Imagenes\Proximamente.png" />
     <Content Include="Imagenes\tecnologia\tecnologia1.jpg" />
     <Content Include="Imagenes\tecnologia\tecnologia2.png" />
     <Content Include="Imagenes\tecnologia\tecnologia3.jpg" />
@@ -277,7 +280,9 @@
     <Content Include="IngresoProductos.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="PapeleriaInicio.aspx" />
-    <Content Include="ReservaDatos.aspx" />
+    <Content Include=".aspx" />
+    <Content Include="RegistroPapeleria.aspx" />
+    <Content Include="Reserva.aspx" />
     <Content Include="Utiles.aspx" />
     <Content Include="Oficina.aspx" />
     <Content Include="Informatica.aspx" />
@@ -297,7 +302,6 @@
     <Content Include="fonts\Account\ResetPasswordConfirmation.aspx" />
     <Content Include="fonts\Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="fonts\Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Reserva.aspx" />
     <Content Include="Papelerias_Registradas.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -372,6 +376,14 @@
     <Compile Include="AdminConsultas.aspx.designer.cs">
       <DependentUpon>AdminConsultas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CarritoCompras.aspx.cs">
+      <DependentUpon>CarritoCompras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarritoCompras.aspx.designer.cs">
+      <DependentUpon>CarritoCompras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CCorreo.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="GenerarCodigos.cs" />
     <Compile Include="IngresoProductos.aspx.cs">
@@ -402,12 +414,26 @@
     <Compile Include="PapeleriaInicio.aspx.designer.cs">
       <DependentUpon>PapeleriaInicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ReservaDatos.aspx.cs">
+    <Compile Include=".aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>ReservaDatos.aspx</DependentUpon>
+      <DependentUpon>.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ReservaDatos.aspx.designer.cs">
-      <DependentUpon>ReservaDatos.aspx</DependentUpon>
+    <Compile Include=".aspx.designer.cs">
+      <DependentUpon>.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroPapeleria.aspx.cs">
+      <DependentUpon>RegistroPapeleria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroPapeleria.aspx.designer.cs">
+      <DependentUpon>RegistroPapeleria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reserva.aspx.cs">
+      <DependentUpon>Reserva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reserva.aspx.designer.cs">
+      <DependentUpon>Reserva.aspx</DependentUpon>
     </Compile>
     <Compile Include="Utiles.aspx.cs">
       <DependentUpon>Utiles.aspx</DependentUpon>
@@ -552,13 +578,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Reserva.aspx.cs">
-      <DependentUpon>Reserva.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Reserva.aspx.designer.cs">
-      <DependentUpon>Reserva.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Papelerias_Registradas.aspx.cs">
       <DependentUpon>Papelerias_Registradas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -21,26 +21,32 @@ namespace ProyectoV1
         {
             try
             {
-                SqlConnection coneccion = new SqlConnection(ConfigurationManager.ConnectionStrings["conect"].ToString());
-                coneccion.Open();
-                Response.Redirect("~/Informatica.aspx");
-                String query = "select NOMBREPAPELERIA from PAPELERIA where NOMBREPAPELERIA='"+TextUsername+ "' and CONTRASENIA='"+TextPass+"'";
-                SqlCommand comando = new SqlCommand(query, coneccion);
+                //SqlConnection coneccion = new SqlConnection(ConfigurationManager.ConnectionStrings["conect"].ToString());
+                Conexion coneccion = new Conexion();
+                //coneccion.Conectar();
+                //Response.Redirect("~/Informatica.aspx");
+                String query = "select NOMBREPAPELERIA from PAPELERIA where NOMBREPAPELERIA like '"+TextUsername.Text+ "' and CONTRASENIA like '"+TextPass.Text+"'";
+                //Response.Write("Consulta " + query);
+                SqlCommand comando = new SqlCommand(query, coneccion.Conectar());
+                //Response.Write("Salidaaaaaaaa "+ comando.ExecuteScalar().ToString());
                 String salida = comando.ExecuteScalar().ToString();
+                //Response.Write("Salida "+salida);
                 if(salida!="" && salida != null)
                 {
-                    Session["user"] = TextUsername;
-                    Response.Redirect("~/Inicio.aspx");
+                    Session["user"] = salida;
+                    Response.Redirect("~/PapeleriaInicio.aspx");
+                    Response.Write("Usuario logeado como "+salida);
                 }
                 else
                 {
                     Response.Write("Login fallido");
+                    Response.Redirect("~/Inicio.aspx");
                 }
             }
             catch(Exception exc)
             {
-                Response.Write("Login fallido" + exc.Message);
-                //Response.Redirect("~/ReservaDatos.aspx");
+                Response.Write("Login Fallido");
+                Response.Redirect("~/Inicio.aspx");
             }
 
         }

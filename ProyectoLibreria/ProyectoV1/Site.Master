@@ -15,6 +15,12 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/Imagenes/ImagenesPrincipales/web.ico" rel="shortcut icon" type="image/x-icon" />
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <style type="text/css">
+        .auto-style1 {
+            width: 176px;
+            height: 193px;
+        }
+    </style>
 </head>
 <body>
     <form runat="server" ImageUrl="~/Imagenes/ImagenesPrincipales/Logopaper.jpg" style="background-position: center; background-image: url('/Imagenes/ImagenesPrincipales/center.jpg'); background-attachment: fixed; background-repeat: repeat; color: #000000;">
@@ -58,16 +64,13 @@
                 </ul>
             </li>
                         <li><a runat="server" href="~/Papelerias_Registradas.aspx">Papelerias</a></li>
-                     </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right">
-                               <li class="dropdown"><a runat="server" href="~/ReservaDatos">Registro </a>
-                                <ul class="dropdown-menu">
-                                    <li><a runat="server" href="~/ReservaDatos.aspx">Papeleria</a></li>
+                               <li class="dropdown"><a runat="server" href="~/RegistroPapeleria.aspx">Registro </a>
                                </ul>
                             </li>
-                             <li><a runat="server" href="~/Login">Iniciar sesión</a></li>
+                             <li><a runat="server" href="~/Login.aspx">Iniciar sesión</a></li>
                                
                             </ul>
                         </AnonymousTemplate>
@@ -82,11 +85,11 @@
             <center> <h3 style="color: #000000; text-align: center;">SÍGUENOS EN NUESTRAS REDES SOCIALES</h3>
     
     
-<div class="custom" style="width: 650px; height: 219px">
+<div class="custom" style="width: 1063px; height: 219px">
 	
 <div class="social_ball">
   <div class="bola_social">
-    <div class="bola_blanca" style="width: 597px; vertical-align: bottom; position: relative; text-align: center; left: 5px; top: 11px;"><a href="https://www.facebook.com/BookFast-118047832187198/" target="_blank"><img src="/Imagenes/ImagenesPrincipales/face.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: xx-large;"><a href="https://twitter.com/BookFastEc" target="_blank"><img src="/Imagenes/ImagenesPrincipales/twiter.png" alt="" style="margin-top: 0px"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+    <div class="bola_blanca" style="width: 1041px; vertical-align: bottom; position: relative; text-align: center; left: 5px; top: 11px;"><a href="https://www.facebook.com/BookFast-118047832187198/" target="_blank"><img src="/Imagenes/ImagenesPrincipales/face.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: xx-large;"><a href="https://twitter.com/BookFastEc" target="_blank"><img src="/Imagenes/ImagenesPrincipales/twiter.png" alt="" style="margin-top: 0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</a>  <a runat="server" href="~/CarritoCompras.aspx"><img src="/Imagenes/ImagenesPrincipales/carrito.png" alt="" class="auto-style1"></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
   </div>
 </div></div>
         </div>

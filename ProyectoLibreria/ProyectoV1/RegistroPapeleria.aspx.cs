@@ -8,19 +8,15 @@ using System.Web.UI.WebControls;
 
 namespace ProyectoV1
 {
-    public partial class ReservaDatos : Page
+    public partial class RegistroPapeleria : System.Web.UI.Page
     {
         Reserva res = new Reserva();
         static Conexion cc = new Conexion();
         Validaciones v = new Validaciones();
-        protected void Page_Load(object sender, EventArgs e)
+    
+            protected void Page_Load(object sender, EventArgs e)
         {
            
-        }
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -50,15 +46,15 @@ namespace ProyectoV1
                     Console.WriteLine(exception);
                     throw;
                 }
-            
+
             }
             else
             {
                 mensaje.Text = "Cédula Incorrecta";
             }
+            CCorreo objcorreo = new CCorreo(txtCorreo.Text, "Confirmacion de Registro", "Se registro correctamente su papeleria.  Gracias por confiar en BookFast");
+          
         }
-
-        
         public void CleanControl(ControlCollection controles)
         {
             foreach (Control control in controles)
@@ -86,30 +82,50 @@ namespace ProyectoV1
         {
             //la colección de controles de la página Web.
             CleanControl(this.Controls);
+
         }
 
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void txtRUC_TextChanged(object sender, EventArgs e)
         {
-            Response.Redirect("PagoTarjeta.aspx");
+
         }
 
-        protected void TextBox13_TextChanged(object sender, EventArgs e)
+        protected void txtNombre_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void TextBox3_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void TextBox4_TextChanged(object sender, EventArgs e)
         {
-           
-           
+
         }
 
-        protected void txtCedula_TextChanged(object sender, EventArgs e)
+        protected void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtLink_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtContra_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtContra0_TextChanged(object sender, EventArgs e)
         {
 
         }

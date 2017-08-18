@@ -40,15 +40,6 @@ namespace ProyectoV1 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
         
         /// <summary>
-        /// Control Conexionarea.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource Conexionarea;
-        
-        /// <summary>
         /// Control LabeltipoProduct.
         /// </summary>
         /// <remarks>
@@ -67,13 +58,13 @@ namespace ProyectoV1 {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
-        /// Control TipoProducto.
+        /// Control Producto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource TipoProducto;
+        protected global::System.Web.UI.WebControls.SqlDataSource Producto;
         
         /// <summary>
         /// Control LabelDescripcion.

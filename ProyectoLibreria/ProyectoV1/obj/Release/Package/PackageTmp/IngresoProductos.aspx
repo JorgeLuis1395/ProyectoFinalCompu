@@ -20,17 +20,20 @@
                 <asp:Label ID="Labelarea" runat="server" Text="Área:" Font-Size="Medium" Font-Bold="True" Font-Italic="False"></asp:Label>
                 </td>
                 <td style="border-style: groove">
-                    <asp:DropDownList ID="DropDownList1" runat="server" BackColor="#C5B67F" Font-Size="Medium" DataSourceID="Conexionarea" DataTextField="NOMBREAREA" DataValueField="NOMBREAREA">
+                    <asp:DropDownList ID="DropDownList1" runat="server" BackColor="#C5B67F" Font-Size="Medium" AutoPostBack="True">
+                        <asp:ListItem Value="0">Seleccionar...</asp:ListItem>
+                        <asp:ListItem Value="2">Oficina</asp:ListItem>
+                        <asp:ListItem Value="1">Tecnologia</asp:ListItem>
+                        <asp:ListItem Value="3">Utiles Escolares</asp:ListItem>
                     </asp:DropDownList>
-                    <asp:SqlDataSource ID="Conexionarea" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString3 %>" SelectCommand="SELECT [NOMBREAREA] FROM [AREA]"></asp:SqlDataSource>
                 </td>
                 </tr>
             <tr>
                 <td style="border-style: groove;"><asp:Label ID="LabeltipoProduct" runat="server" Font-Size="Medium" Text="Tipo de Producto:" Font-Bold="True"></asp:Label></td>
                 <td style="border-style: groove">
-                    <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#C4B480" Font-Size="Medium" DataSourceID="TipoProducto" DataTextField="PRODUCTO" DataValueField="PRODUCTO">
+                    <asp:DropDownList ID="DropDownList2" runat="server" BackColor="#C4B480" Font-Size="Medium" DataSourceID="Producto" DataTextField="ATTRIBUTE_11" DataValueField="ATTRIBUTE_11" AutoPostBack="True">
                     </asp:DropDownList>
-                    <asp:SqlDataSource ID="TipoProducto" runat="server" ConnectionString="<%$ ConnectionStrings:BookFastDBConnectionString %>" SelectCommand="SELECT [PRODUCTO] FROM [PRODUCTO] WHERE ([ID_AREA] = @ID_AREA)">
+                    <asp:SqlDataSource ID="Producto" runat="server" ConnectionString="Data Source=bookfast.database.windows.net;Initial Catalog=BookFast;User ID=BOOKFAST;Password=Libreria123" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [ATTRIBUTE_11] FROM [PRODUCTO] WHERE ([ID_AREA] = @ID_AREA)">
                         <SelectParameters>
                             <asp:ControlParameter ControlID="DropDownList1" Name="ID_AREA" PropertyName="SelectedValue" Type="Int32" />
                         </SelectParameters>
@@ -70,7 +73,7 @@
                                <p>
                                    <p>
 
-                                     <center>  <asp:Button ID="ButtonAceptarFinal" runat="server" Text="Aceptar" BackColor="#3F1912" Font-Size="Medium" ForeColor="#F4D18F" />
+                                     <center>  <asp:Button ID="ButtonAceptarFinal" runat="server" Text="Aceptar" BackColor="#3F1912" Font-Size="Medium" ForeColor="#F4D18F" OnClick="ButtonAceptarFinal_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                          <asp:Button ID="ButtonLimpiar" runat="server" BackColor="#411A13" Font-Size="Medium" ForeColor="#F3D28E" Text="Limpiar" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
